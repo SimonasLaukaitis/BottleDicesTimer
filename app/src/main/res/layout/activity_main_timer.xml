@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".ActivityTimer">
+
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="LAIKMATIS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextNumberMin"
+        android:layout_width="70dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="100dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="0"
+        android:inputType="number"
+        android:max="9"
+        android:maxLength="1"
+        android:min="0"
+        android:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        app:layout_constraintBottom_toBottomOf="@+id/TextNumberSec"
+        app:layout_constraintEnd_toStartOf="@+id/textTwoDots"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/TextNumberSec"
+        android:layout_width="154dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="00"
+        android:inputType="number"
+        android:max="59"
+        android:maxLength="2"
+        android:min="0"
+        android:text="00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTimer" />
+
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="373dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="40dp"
+        android:text="Pradėti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTwoDots" />
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="373dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="Atnaujinti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <TextView
+        android:id="@+id/textTwoDots"
+        android:layout_width="35dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        app:layout_constraintBottom_toBottomOf="@+id/TextNumberSec"
+        app:layout_constraintEnd_toStartOf="@+id/TextNumberSec"
+        app:layout_constraintStart_toEndOf="@+id/TextNumberMin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

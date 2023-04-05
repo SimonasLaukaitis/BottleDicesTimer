@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/extrabacground"
+    tools:context=".ActivityExtra">
+
+    <Button
+        android:id="@+id/buttonDice"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:text="Kauliukai"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBottle" />
+
+    <ImageView
+        android:id="@+id/buttonDiceBacground"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dicesbuttonbacground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBottle" />
+
+    <Button
+        android:id="@+id/buttonTimer"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="170dp"
+        android:text="Laikmatis"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/buttonTimerBacground"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBottle"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:text="Butelis"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTimer" />
+
+    <ImageView
+        android:id="@+id/buttonBottleBackground"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/floor"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTimer" />
+
+    <Button
+        android:id="@+id/buttonArrow"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:text="Sukti"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDice" />
+
+    <ImageView
+        android:id="@+id/buttonArrowBackground"
+        android:layout_width="308dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fourcolors"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
